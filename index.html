@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CO NPS Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main">
+    <h1 id="title">Colorado National Park Survey</h1>
+    <p id="description">Share your experience</p>
+  </header>
+  
+  <form action="" id="survey-form">
+   
+    <div class="name">
+      <label for="name" id="name-label">Name*</label>
+    </div>
+    <div class="input-field">
+      <input type="text" id="name" name="name" placeholder="Enter your Name" required >   
+    </div>
+            
+    <div class="email">
+      <label for="email" id="email-label">Email*</label>
+    </div>
+    <div class="input-field">
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+    </div>
+          
+    <div class="age">
+      <label for="number" id="number-label">Age</label>
+    </div>
+    <div class="number-field">
+      <input type="number" id="number" min="1" max="120" name="number"  placeholder="Age">
+    </div>
+          
+    <label class="np-label" for="np">Which National Park did you visit?</label>  
+      <select name="np" id="dropdown">
+        <option value="RMNP">Rocky Mountain National Park</option>
+        <option value="Mesa Verde">Mesa Verde National Park</option>
+        <option value="Sand Dunes">Great Sand Dunes National Park</option>
+        <option value="Black Canyon">Black Canyon of Gunnison National Park</option>
+      </select>
+    
+  <fieldset>
+    <legend>Check any activities you did on your visit:</legend>
+      
+      <div>
+        <input type="checkbox" class="checkbox" name="activity" value="Hike">
+        <label class="box">Hike </label>
+      </div>
+                  
+      <div>
+        <input type="checkbox" name="activity" value="Picnic"> 
+        <label class="box" for="picnic">Picnic</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="hike" name="activity" value="Cycle">
+          <label class="box" for="cycle">Cycle</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="camp" name="activity" value="Camp">
+        <label class="box" for="camp">Camp</label>
+      </div>  
+  
+      <div>
+        <input type="checkbox" id="climbing" name="activity" value="Rock Climbing">
+        <label class="box" for="climbing">Rock Climbing</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="fishing" name="activity" value="Rock Climbing">
+        <label class="box" for="fishing">Fishing</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="bird" name="activity" value="Bird Watching">
+        <label class="box" for="watchin">Bird Watching</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="backpacking" name="activity" value="Backpacking"> 
+        <label class="box" for="backpacking">Backpacking</label>
+        </div>
+    </fieldset>
+         
+    <fieldset class="radio">
+      <p id="radio-label">Would you like to visit again?</p>
+        <input type="radio"  name="visit" value="yes" >
+          <label class="box" for="yes">Yes</label>
+        <input class="box" type="radio" name="visit" value="no">
+          <label for="no">No</label>
+      </fieldset>
+      
+     
+        <p class="comments">Any comments or suggestions?</p>
+          <textarea rows="4" cols="50">
+          </textarea>
+     <div class="btn">
+      <button class="btn-submit">
+        Submit<a id="submit" href="#"></a>
+      </button>    
+    </div>   
+  </form>
+</body>
+</html>
